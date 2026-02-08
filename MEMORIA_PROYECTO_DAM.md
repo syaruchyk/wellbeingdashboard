@@ -267,5 +267,28 @@ La aplicación demuestra estabilidad en los flujos principales. No se han detect
 
 ---
 
-*(Este documento es vivo y se actualizará progresivamente con el avance de las fases)*
+## 12. CONCLUSIONES Y FUTURAS MEJORAS
+
+### 12.1 Conclusiones
+El proyecto "Wellbeing Dashboard" ha cumplido satisfactoriamente con los objetivos planteados al inicio del curso. Se ha logrado desarrollar una aplicación Android funcional, moderna y robusta, aplicando estándares de la industria como Clean Architecture y MVVM.
+*   **Logro Técnico:** La implementación exitosa de una base de datos reactiva con Room y Flows demuestra un dominio avanzado de la asincronía en Android.
+*   **Valor para el Usuario:** La funcionalidad Offline First garantiza que la herramienta sea útil en cualquier contexto, respetando la privacidad.
+
+### 12.2 Futuras Mejoras
+Aunque la versión actual es completamente funcional (MVP), se identifican áreas de mejora para futuras iteraciones:
+1.  **Backup en la Nube:** Integración opcional con Google Drive para permitir al usuario restaurar sus datos en un nuevo dispositivo.
+2.  **Gamificación:** Implementar un sistema de logros y medallas basado en las rachas de hábitos para aumentar la retención.
+3.  **Exportación PDF:** Generar informes mensuales para que el usuario pueda compartirlos con profesionales de la salud si lo desea.
+
+---
+
+## 13. BIBLIOGRAFÍA Y REFERENCIAS
+
+1.  **Android Developers Documentation.** (2026). *Guide to App Architecture.* Recuperado de: [developer.android.com/topic/architecture](https://developer.android.com/topic/architecture)
+2.  **Google Codelabs.** (2025). *Jetpack Compose Basics.* Recuperado de: [developer.android.com/codelabs/jetpack-compose-basics](https://developer.android.com/codelabs/jetpack-compose-basics)
+3.  **Robert C. Martin.** (2017). *Clean Architecture: A Craftsman's Guide to Software Structure and Design.* Prentice Hall.
+4.  **Plutchik, R.** (1980). *A general psychoevolutionary theory of emotion.* Emotion: Theory, research, and experience, 1(3), 3-33.
+
+---
+**FIN DEL DOCUMENTO**
 
