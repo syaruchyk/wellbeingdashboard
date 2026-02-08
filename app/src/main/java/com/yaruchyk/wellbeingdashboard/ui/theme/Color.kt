@@ -2,10 +2,14 @@ package com.yaruchyk.wellbeingdashboard.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+val Teal800 = Color(0xFF00695C)
+val Teal100 = Color(0xFFB2DFDB)
+val DeepOrange400 = Color(0xFFFF7043)
+val Grey100 = Color(0xFFF5F5F5)
+val White = Color(0xFFFFFFFF)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+// Dark
+val Teal200 = Color(0xFF80CBC4) // Primary for Dark
+val Teal700 = Color(0xFF004D40) // Secondary for Dark
+val DarkBackground = Color(0xFF121212)
+val DarkSurface = Color(0xFF1E1E1E)
