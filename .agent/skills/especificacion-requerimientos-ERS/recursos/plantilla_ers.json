@@ -1,0 +1,65 @@
+{
+    "nombreProyecto": "Nombre del Proyecto",
+    "version": "1.0",
+    "fecha": "YYYY-MM-DD",
+    "preparadoPor": "Tu Nombre/Equipo",
+    "archivoSalida": "MiProyecto_ERS.docx",
+    "introduccion": {
+        "proposito": "...",
+        "alcance": "...",
+        "referencias": "..."
+    },
+    "definiciones": [
+        {
+            "termino": "API",
+            "definicion": "Interfaz de Programación de Aplicaciones"
+        }
+    ],
+    "descripcionGeneral": {
+        "perspectiva": "...",
+        "funciones": "...",
+        "listaFunciones": [
+            "función 1",
+            "función 2"
+        ],
+        "usuarios": "...",
+        "restricciones": "...",
+        "supuestos": "..."
+    },
+    "requerimientosFuncionales": [
+        {
+            "titulo": "Nombre del Requerimiento",
+            "prioridad": "Alta|Media|Baja|Crítica",
+            "descripcion": "Qué debe hacer",
+            "criteriosAceptacion": "Cómo verificar"
+        }
+    ],
+    "requerimientosNoFuncionales": {
+        "rendimiento": "...",
+        "seguridad": "...",
+        "usabilidad": "...",
+        "confiabilidad": "..."
+    },
+    "caracteristicas": [
+        {
+            "nombre": "Característica Principal",
+            "descripcion": "...",
+            "subCaracteristicas": [
+                "sub 1",
+                "sub 2"
+            ]
+        }
+    ],
+    "interfacesExternas": {
+        "interfazUsuario": "...",
+        "hardware": "...",
+        "software": "...",
+        "comunicaciones": "..."
+    },
+    "apendices": [
+        {
+            "titulo": "Apéndice A",
+            "contenido": "..."
+        }
+    ]
+}
