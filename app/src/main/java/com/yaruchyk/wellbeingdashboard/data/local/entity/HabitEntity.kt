@@ -9,26 +9,9 @@ data class HabitEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
     val title: String,
-    val description: String,
-    val isCompleted: Boolean
+    val description: String?,
+    val isActive: Boolean = true,
+    val createdAt: java.time.LocalDateTime = java.time.LocalDateTime.now()
 ) {
-    fun toDomain(): Habit {
-        return Habit(
-            id = id,
-            title = title,
-            description = description,
-            isCompleted = isCompleted
-        )
-    }
-
-    companion object {
-        fun fromDomain(habit: Habit): HabitEntity {
-            return HabitEntity(
-                id = habit.id,
-                title = habit.title,
-                description = habit.description,
-                isCompleted = habit.isCompleted
-            )
-        }
-    }
+    // Adapter/Mapper logic will be handled in Repository to map partial data
 }

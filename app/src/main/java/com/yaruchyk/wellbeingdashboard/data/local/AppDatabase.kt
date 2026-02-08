@@ -9,12 +9,18 @@ import com.yaruchyk.wellbeingdashboard.data.local.entity.EmotionRecordEntity
 import com.yaruchyk.wellbeingdashboard.data.local.entity.HabitEntity
 
 @Database(
-    entities = [HabitEntity::class, EmotionRecordEntity::class],
-    version = 2,
+    entities = [
+        HabitEntity::class, 
+        EmotionRecordEntity::class,
+        com.yaruchyk.wellbeingdashboard.data.local.entity.HabitScheduleEntity::class,
+        com.yaruchyk.wellbeingdashboard.data.local.entity.HabitCheckEntity::class
+    ],
+    version = 3,
     exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun habitDao(): HabitDao
     abstract fun emotionDao(): EmotionDao
+    abstract fun habitCheckDao(): com.yaruchyk.wellbeingdashboard.data.local.dao.HabitCheckDao
 }

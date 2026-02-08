@@ -28,4 +28,14 @@ class Converters {
     fun fromIntensity(intensity: com.yaruchyk.wellbeingdashboard.domain.model.EmotionIntensity?): String? {
         return intensity?.name
     }
+
+    @TypeConverter
+    fun toLocalDate(value: String?): java.time.LocalDate? {
+        return value?.let { java.time.LocalDate.parse(it) }
+    }
+
+    @TypeConverter
+    fun fromLocalDate(date: java.time.LocalDate?): String? {
+        return date?.toString()
+    }
 }

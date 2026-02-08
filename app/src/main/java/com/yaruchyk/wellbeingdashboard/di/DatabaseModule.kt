@@ -41,6 +41,11 @@ object DatabaseModule {
     }
 
     @Provides
+    fun provideHabitCheckDao(database: AppDatabase): com.yaruchyk.wellbeingdashboard.data.local.dao.HabitCheckDao {
+        return database.habitCheckDao()
+    }
+
+    @Provides
     @Singleton
     fun provideWellbeingRepository(
         habitDao: HabitDao,
