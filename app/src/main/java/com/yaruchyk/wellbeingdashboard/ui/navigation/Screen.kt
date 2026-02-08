@@ -12,4 +12,5 @@ sealed class Screen(val route: String, val title: String, val icon: ImageVector?
     object Habits : Screen("habits", "Hábitos", Icons.Default.CheckCircle)
     object Stats : Screen("stats", "Progreso", Icons.Default.BarChart)
     object Settings : Screen("settings", "Ajustes", Icons.Default.Settings)
+    object HabitForm : Screen("habit_form", "Nuevo Hábito")
 }

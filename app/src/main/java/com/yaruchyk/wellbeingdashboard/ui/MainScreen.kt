@@ -9,6 +9,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.yaruchyk.wellbeingdashboard.ui.components.BottomNavBar
 import com.yaruchyk.wellbeingdashboard.ui.dashboard.DashboardScreen
+import com.yaruchyk.wellbeingdashboard.ui.habits.HabitsScreen
+import com.yaruchyk.wellbeingdashboard.ui.habits.HabitFormScreen
 import com.yaruchyk.wellbeingdashboard.ui.navigation.Screen
 import androidx.compose.material3.Text
 import androidx.compose.foundation.layout.Box
@@ -31,7 +33,10 @@ fun MainScreen() {
                 DashboardScreen(navController)
             }
             composable(Screen.Habits.route) {
-                PlaceholderScreen("Gestión de Hábitos")
+                HabitsScreen(navController)
+            }
+            composable(Screen.HabitForm.route) {
+                HabitFormScreen(navController)
             }
             composable(Screen.Stats.route) {
                 PlaceholderScreen("Estadísticas y Progreso")
