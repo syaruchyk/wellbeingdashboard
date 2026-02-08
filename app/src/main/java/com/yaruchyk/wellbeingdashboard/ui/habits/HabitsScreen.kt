@@ -31,6 +31,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.foundation.lazy.items
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.yaruchyk.wellbeingdashboard.ui.components.HabitCard
 import com.yaruchyk.wellbeingdashboard.presentation.viewmodel.HabitsViewModel
 import com.yaruchyk.wellbeingdashboard.ui.navigation.Screen
 
@@ -78,41 +79,5 @@ fun HabitsScreen(
     }
 }
 
-@Composable
-fun HabitCard(habit: com.yaruchyk.wellbeingdashboard.domain.model.Habit) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-    ) {
-        Column(
-            modifier = Modifier.padding(16.dp)
-        ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                Text(
-                    text = habit.title,
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onSurface
-                )
-                Box(
-                    modifier = Modifier
-                ) {
-                    val daysText = if (habit.daysOfWeek.size == 7) "Diario" else "${habit.daysOfWeek.size} días/set"
-                    Text(text = daysText, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.secondary)
-                }
-            }
-            if (!habit.description.isNullOrBlank()) {
-                Spacer(modifier = Modifier.height(4.dp))
-                Text(
-                    text = habit.description,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant
-                )
-            }
-        }
-    }
-}
+// No local HabitCard needed
+

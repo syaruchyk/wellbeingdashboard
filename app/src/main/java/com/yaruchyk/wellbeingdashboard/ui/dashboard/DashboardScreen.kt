@@ -25,9 +25,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.yaruchyk.wellbeingdashboard.presentation.viewmodel.DashboardViewModel
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.ExperimentalMaterial3Api
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DashboardScreen(navController: NavController) {
+fun DashboardScreen(
+    navController: NavController,
+    viewModel: com.yaruchyk.wellbeingdashboard.presentation.viewmodel.DashboardViewModel = androidx.hilt.navigation.compose.hiltViewModel()
+) {
+    val todayHabits by viewModel.todayHabits.collectAsState()
+
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(onClick = { /* TODO: Open Emotion Bottom Sheet */ }, containerColor = MaterialTheme.colorScheme.tertiary) {
@@ -64,12 +76,20 @@ fun DashboardScreen(navController: NavController) {
             )
             Spacer(modifier = Modifier.height(8.dp))
             
-            // Placeholder List
-            LazyColumn(
-                verticalArrangement = Arrangement.spacedBy(8.dp)
-            ) {
-                items(3) { index ->
-                    HabitItemPlaceholder(index)
+            if (todayHabits.isEmpty()) {
+                Text(
+                    text = "No tienes hábitos programados para hoy.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(top = 8.dp)
+                )
+            } else {
+                LazyColumn(
+                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    items(todayHabits) { habit ->
+                         com.yaruchyk.wellbeingdashboard.ui.components.HabitCard(habit)
+                    }
                 }
             }
         }
@@ -92,23 +112,6 @@ fun EmotionSummaryCard() {
             Spacer(modifier = Modifier.height(8.dp))
             // Button placeholder
             Text(text = "Registrar ahora", color = MaterialTheme.colorScheme.primary, style = MaterialTheme.typography.labelLarge)
-        }
-    }
-}
-
-@Composable
-fun HabitItemPlaceholder(index: Int) {
-    Card(
-        modifier = Modifier.fillMaxWidth(),
-        elevation = CardDefaults.cardElevation(defaultElevation = 1.dp),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
-    ) {
-        Row(
-            modifier = Modifier.padding(16.dp),
-            verticalAlignment = Alignment.CenterVertically
-        ) {
-             // Checkbox placeholder
-            Text(text = "Habit ${index + 1}", style = MaterialTheme.typography.bodyLarge)
         }
     }
 }
