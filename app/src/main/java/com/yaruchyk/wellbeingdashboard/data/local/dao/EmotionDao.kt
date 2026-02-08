@@ -13,6 +13,9 @@ interface EmotionDao {
     @Query("SELECT * FROM emotion_records ORDER BY timestamp DESC")
     fun getAllEmotionRecords(): Flow<List<EmotionRecordEntity>>
 
+    @Query("SELECT * FROM emotion_records WHERE timestamp BETWEEN :start AND :end ORDER BY timestamp DESC")
+    fun getEmotionRecordsBetween(start: java.time.LocalDateTime, end: java.time.LocalDateTime): Flow<List<EmotionRecordEntity>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertEmotionRecord(record: EmotionRecordEntity)
 

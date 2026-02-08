@@ -16,6 +16,6 @@ interface HabitCheckDao {
     @Query("SELECT * FROM habit_checks WHERE habitId = :habitId AND date = :date")
     suspend fun getCheck(habitId: Int, date: LocalDate): HabitCheckEntity?
 
-    @Query("SELECT * FROM habit_checks WHERE date = :date")
-    fun getChecksForDate(date: LocalDate): Flow<List<HabitCheckEntity>>
+    @Query("SELECT * FROM habit_checks WHERE date BETWEEN :startDate AND :endDate")
+    fun getChecksBetween(startDate: LocalDate, endDate: LocalDate): Flow<List<HabitCheckEntity>>
 }

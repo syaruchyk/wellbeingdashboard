@@ -17,6 +17,10 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @javax.inject.Inject
+    lateinit var notificationHelper: com.yaruchyk.wellbeingdashboard.ui.notifications.NotificationHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

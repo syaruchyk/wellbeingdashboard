@@ -39,10 +39,10 @@ fun MainScreen() {
                 HabitFormScreen(navController)
             }
             composable(Screen.Stats.route) {
-                PlaceholderScreen("Estadísticas y Progreso")
+                com.yaruchyk.wellbeingdashboard.ui.stats.StatsScreen()
             }
             composable(Screen.Settings.route) {
-                PlaceholderScreen("Ajustes")
+                com.yaruchyk.wellbeingdashboard.ui.settings.SettingsScreen()
             }
         }
     }

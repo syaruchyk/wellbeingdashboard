@@ -31,6 +31,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.yaruchyk.wellbeingdashboard.presentation.viewmodel.DashboardViewModel
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.runtime.getValue
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -39,10 +43,20 @@ fun DashboardScreen(
     viewModel: com.yaruchyk.wellbeingdashboard.presentation.viewmodel.DashboardViewModel = androidx.hilt.navigation.compose.hiltViewModel()
 ) {
     val todayHabits by viewModel.todayHabits.collectAsState()
+    var showEmotionSheet by remember { mutableStateOf(false) }
+
+    if (showEmotionSheet) {
+        com.yaruchyk.wellbeingdashboard.ui.emotions.EmotionEntrySheet(
+            onDismiss = { showEmotionSheet = false }
+        )
+    }
 
     Scaffold(
         floatingActionButton = {
-            FloatingActionButton(onClick = { /* TODO: Open Emotion Bottom Sheet */ }, containerColor = MaterialTheme.colorScheme.tertiary) {
+            FloatingActionButton(
+                onClick = { showEmotionSheet = true },
+                containerColor = MaterialTheme.colorScheme.tertiary
+            ) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = "Registrar Emoción")
             }
         }

@@ -16,4 +16,8 @@ interface WellbeingRepository {
     fun getAllEmotionRecords(): Flow<List<EmotionRecord>>
     suspend fun insertEmotionRecord(record: EmotionRecord)
     suspend fun deleteEmotionRecord(record: EmotionRecord)
+
+    // Statistics Support
+    fun getHabitChecksBetween(startDate: java.time.LocalDate, endDate: java.time.LocalDate): Flow<List<com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck>>
+    fun getEmotionRecordsBetween(start: java.time.LocalDateTime, end: java.time.LocalDateTime): Flow<List<EmotionRecord>>
 }
