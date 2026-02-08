@@ -32,14 +32,19 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.yaruchyk.wellbeingdashboard.presentation.viewmodel.HabitFormViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HabitFormScreen(navController: NavController) {
+fun HabitFormScreen(
+    navController: NavController,
+    viewModel: com.yaruchyk.wellbeingdashboard.presentation.viewmodel.HabitFormViewModel = androidx.hilt.navigation.compose.hiltViewModel()
+) {
     var title by remember { mutableStateOf("") }
     var description by remember { mutableStateOf("") }
     
-    // Placeholder state for chips
+    // Default to all days selected? Or none? Let's say M-F by default or none.
     val daysOfWeek = listOf("L", "M", "X", "J", "V", "S", "D")
     val selectedDays = remember { mutableStateOf(setOf<String>()) }
 
@@ -100,7 +105,6 @@ fun HabitFormScreen(navController: NavController) {
                     FilterChip(
                         selected = selectedDays.value.contains(day),
                         onClick = { 
-                            // Toggle logic would go here
                             val current = selectedDays.value.toMutableSet()
                             if (current.contains(day)) current.remove(day) else current.add(day)
                             selectedDays.value = current
@@ -125,7 +129,12 @@ fun HabitFormScreen(navController: NavController) {
                     Text("Cancelar")
                 }
                 Button(
-                    onClick = { navController.popBackStack() }, // Mock save
+                    onClick = { 
+                        viewModel.saveHabit(title, description, selectedDays.value) {
+                            navController.popBackStack()
+                        }
+                    },
+                    enabled = title.isNotBlank() && selectedDays.value.isNotEmpty(),
                     modifier = Modifier.weight(1f)
                 ) {
                     Text("Guardar")

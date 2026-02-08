@@ -27,11 +27,21 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.foundation.lazy.items
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.yaruchyk.wellbeingdashboard.presentation.viewmodel.HabitsViewModel
 import com.yaruchyk.wellbeingdashboard.ui.navigation.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HabitsScreen(navController: NavController) {
+fun HabitsScreen(
+    navController: NavController,
+    viewModel: com.yaruchyk.wellbeingdashboard.presentation.viewmodel.HabitsViewModel = androidx.hilt.navigation.compose.hiltViewModel()
+) {
+    val habits by viewModel.habits.collectAsState()
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -60,9 +70,8 @@ fun HabitsScreen(navController: NavController) {
             LazyColumn(
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
-                // Placeholder items
-                items(5) { index ->
-                    HabitCardPlaceholder(index)
+                items(habits) { habit ->
+                    HabitCard(habit)
                 }
             }
         }
@@ -70,7 +79,7 @@ fun HabitsScreen(navController: NavController) {
 }
 
 @Composable
-fun HabitCardPlaceholder(index: Int) {
+fun HabitCard(habit: com.yaruchyk.wellbeingdashboard.domain.model.Habit) {
     Card(
         modifier = Modifier.fillMaxWidth(),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
@@ -85,22 +94,25 @@ fun HabitCardPlaceholder(index: Int) {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Hábito Ejemplo ${index + 1}",
+                    text = habit.title,
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurface
                 )
                 Box(
                     modifier = Modifier
                 ) {
-                    Text(text = "Diario", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.secondary)
+                    val daysText = if (habit.daysOfWeek.size == 7) "Diario" else "${habit.daysOfWeek.size} días/set"
+                    Text(text = daysText, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.secondary)
                 }
             }
-            Spacer(modifier = Modifier.height(4.dp))
-            Text(
-                text = "Descripción corta del hábito para mantener la constancia.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
-            )
+            if (!habit.description.isNullOrBlank()) {
+                Spacer(modifier = Modifier.height(4.dp))
+                Text(
+                    text = habit.description,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant
+                )
+            }
         }
     }
 }
