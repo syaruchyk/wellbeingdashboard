@@ -18,4 +18,14 @@ class Converters {
     fun dateToTimestamp(date: LocalDateTime?): String? {
         return date?.format(formatter)
     }
+
+    @TypeConverter
+    fun toIntensity(value: String?): com.yaruchyk.wellbeingdashboard.domain.model.EmotionIntensity? {
+        return value?.let { com.yaruchyk.wellbeingdashboard.domain.model.EmotionIntensity.valueOf(it) }
+    }
+
+    @TypeConverter
+    fun fromIntensity(intensity: com.yaruchyk.wellbeingdashboard.domain.model.EmotionIntensity?): String? {
+        return intensity?.name
+    }
 }
