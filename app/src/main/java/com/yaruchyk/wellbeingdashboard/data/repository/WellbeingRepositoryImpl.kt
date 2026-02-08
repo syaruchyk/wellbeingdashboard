@@ -18,21 +18,62 @@ class WellbeingRepositoryImpl @Inject constructor(
 
     // Habits
     override fun getAllHabits(): Flow<List<Habit>> {
-        return habitDao.getAllHabits().map { entities ->
-            entities.map { it.toDomain() }
+        return habitDao.getAllHabits().map { relations ->
+            relations.map { relation ->
+                // Map Entity + Schedules -> Domain
+                Habit(
+                    id = relation.habit.id,
+                    title = relation.habit.title,
+                    description = relation.habit.description,
+                    isActive = relation.habit.isActive,
+                    daysOfWeek = relation.schedules.map { 
+                        // Convert Int (1-7) to DayOfWeek
+                        java.time.DayOfWeek.of(it.dayOfWeek) 
+                    }
+                )
+            }
         }
     }
 
     override suspend fun insertHabit(habit: Habit) {
-        habitDao.insertHabit(HabitEntity.fromDomain(habit))
+        val habitEntity = HabitEntity(
+            id = habit.id, // 0 for new
+            title = habit.title,
+            description = habit.description,
+            isActive = habit.isActive
+        )
+        // 1. Insert Habit
+        val habitId = habitDao.insertHabit(habitEntity).toInt()
+        
+        // 2. Insert Schedules
+        val scheduleEntities = habit.daysOfWeek.map { day ->
+            com.yaruchyk.wellbeingdashboard.data.local.entity.HabitScheduleEntity(
+                habitId = habitId,
+                dayOfWeek = day.value
+            )
+        }
+        // Replace schedules (delete old if update, but simpler to just replace relations if managing updates carefully)
+        // For simple insert/update flow:
+        if (habit.id != 0) {
+            habitDao.deleteSchedules(habit.id)
+        }
+        habitDao.insertSchedules(scheduleEntities)
     }
 
     override suspend fun updateHabit(habit: Habit) {
-        habitDao.updateHabit(HabitEntity.fromDomain(habit))
+        // Reuse insert logic since we handle ID and schedule replacement
+        insertHabit(habit)
     }
 
     override suspend fun deleteHabit(habit: Habit) {
-        habitDao.deleteHabit(HabitEntity.fromDomain(habit))
+         // Cascade delete handles schedules
+         val entity = HabitEntity(
+            id = habit.id,
+            title = habit.title,
+            description = habit.description,
+            isActive = habit.isActive
+        )
+        habitDao.deleteHabit(entity)
     }
 
     override suspend fun getHabitById(id: Int): Habit? {
