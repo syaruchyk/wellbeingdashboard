@@ -45,12 +45,4 @@ object DatabaseModule {
         return database.habitCheckDao()
     }
 
-    @Provides
-    @Singleton
-    fun provideWellbeingRepository(
-        habitDao: HabitDao,
-        emotionDao: EmotionDao
-    ): WellbeingRepository {
-        return WellbeingRepositoryImpl(habitDao, emotionDao)
-    }
 }

@@ -2,6 +2,7 @@ package com.yaruchyk.wellbeingdashboard.data.repository
 
 import com.yaruchyk.wellbeingdashboard.data.local.dao.EmotionDao
 import com.yaruchyk.wellbeingdashboard.data.local.dao.HabitDao
+import com.yaruchyk.wellbeingdashboard.data.local.dao.HabitCheckDao
 import com.yaruchyk.wellbeingdashboard.data.local.entity.EmotionRecordEntity
 import com.yaruchyk.wellbeingdashboard.data.local.entity.HabitEntity
 import com.yaruchyk.wellbeingdashboard.domain.model.EmotionRecord
@@ -13,8 +14,24 @@ import javax.inject.Inject
 
 class WellbeingRepositoryImpl @Inject constructor(
     private val habitDao: HabitDao,
+    private val habitCheckDao: HabitCheckDao,
     private val emotionDao: EmotionDao
 ) : WellbeingRepository {
+
+    // ... (existing methods kept same by not touching them in replacement if possible, but I need to replace class header and new methods)
+    // To avoid replacing whole file, I will do it in chunks.
+    // Chunk 1: Constructor
+    // Chunk 2: New Methods
+    
+    // Actually, let's just do the whole file or large chunks.
+    // I'll start with constructor.
+    
+    // Wait, the tool requires contiguous blocks.
+    // I will use replace_file_content for constructor and then another for methods?
+    // Or just one big replace if they are close? They are at opposite ends.
+    // I'll use separate calls or multi_replace.
+    // Let's use multi_replace.
+
 
     // Habits
     override fun getAllHabits(): Flow<List<Habit>> {
@@ -93,5 +110,30 @@ class WellbeingRepositoryImpl @Inject constructor(
 
     override suspend fun deleteEmotionRecord(record: EmotionRecord) {
         emotionDao.deleteEmotionRecord(EmotionRecordEntity.fromDomain(record))
+    }
+
+    override fun getHabitChecksBetween(
+        startDate: java.time.LocalDate,
+        endDate: java.time.LocalDate
+    ): Flow<List<com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck>> {
+        return habitCheckDao.getChecksBetween(startDate, endDate).map { entities ->
+            entities.map { entity ->
+                com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck(
+                    id = entity.id,
+                    habitId = entity.habitId,
+                    date = entity.date,
+                    isCompleted = entity.isCompleted
+                )
+            }
+        }
+    }
+
+    override fun getEmotionRecordsBetween(
+        start: java.time.LocalDateTime,
+        end: java.time.LocalDateTime
+    ): Flow<List<EmotionRecord>> {
+        return emotionDao.getEmotionRecordsBetween(start, end).map { entities ->
+            entities.map { it.toDomain() }
+        }
     }
 }
