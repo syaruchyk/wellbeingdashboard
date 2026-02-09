@@ -3,11 +3,15 @@ package com.yaruchyk.wellbeingdashboard.data.local.entity
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.Index
+import androidx.room.PrimaryKey
 import java.time.LocalDate
 
 @Entity(
     tableName = "habit_checks",
-    primaryKeys = ["habitId", "date"],
+    indices = [
+        Index(value = ["habitId"], name = "index_habit_id"),
+        Index(value = ["habitId", "date"], unique = true)
+    ],
     foreignKeys = [
         ForeignKey(
             entity = HabitEntity::class,
@@ -15,10 +19,11 @@ import java.time.LocalDate
             childColumns = ["habitId"],
             onDelete = ForeignKey.CASCADE
         )
-    ],
-    indices = [Index("habitId")]
+    ]
 )
 data class HabitCheckEntity(
+    @PrimaryKey(autoGenerate = true)
+    val id: Int = 0,
     val habitId: Int,
     val date: LocalDate,
     val isCompleted: Boolean

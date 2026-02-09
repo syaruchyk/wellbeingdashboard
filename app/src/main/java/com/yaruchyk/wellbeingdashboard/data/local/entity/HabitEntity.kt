@@ -13,5 +13,13 @@ data class HabitEntity(
     val isActive: Boolean = true,
     val createdAt: java.time.LocalDateTime = java.time.LocalDateTime.now()
 ) {
-    // Adapter/Mapper logic will be handled in Repository to map partial data
+    fun toDomain(): Habit {
+        return Habit(
+            id = id,
+            title = title,
+            description = description,
+            isActive = isActive
+            // daysOfWeek is not part of the entity, handled by relations or defaulting to empty
+        )
+    }
 }
