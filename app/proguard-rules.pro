@@ -1,21 +1,24 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Hilt/Dagger
+-keep class com.yaruchyk.wellbeingdashboard.WellbeingApplication { *; }
+-keep class dagger.hilt.** { *; }
+-keep interface dagger.hilt.** { *; }
+-keep public class * extends dagger.hilt.internal.aggregatedroot.AggregatedRoot
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Room
+-keep class androidx.room.** { *; }
+-keep class * extends androidx.room.RoomDatabase
+-dontwarn androidx.room.paging.**
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Data Classes (Entities/Models) - Keep mainly for safety in this phase
+-keep class com.yaruchyk.wellbeingdashboard.data.local.entity.** { *; }
+-keep class com.yaruchyk.wellbeingdashboard.domain.model.** { *; }
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Compose (Generally safe, but keeping for stability)
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes InnerClasses
+-keepattributes EnclosingMethod
+
+# Retrofit/Gson (Not used but good practice template)
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile

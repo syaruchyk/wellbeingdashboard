@@ -19,5 +19,7 @@ interface WellbeingRepository {
 
     // Statistics Support
     fun getHabitChecksBetween(startDate: java.time.LocalDate, endDate: java.time.LocalDate): Flow<List<com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck>>
+    suspend fun insertHabitCheck(check: com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck)
+    suspend fun deleteHabitCheck(habitId: Int, date: java.time.LocalDate)
     fun getEmotionRecordsBetween(start: java.time.LocalDateTime, end: java.time.LocalDateTime): Flow<List<EmotionRecord>>
 }

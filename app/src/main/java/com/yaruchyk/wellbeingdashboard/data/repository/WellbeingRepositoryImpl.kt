@@ -128,6 +128,21 @@ class WellbeingRepositoryImpl @Inject constructor(
         }
     }
 
+    override suspend fun insertHabitCheck(check: com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck) {
+        habitCheckDao.insertCheck(
+            com.yaruchyk.wellbeingdashboard.data.local.entity.HabitCheckEntity(
+                id = check.id,
+                habitId = check.habitId,
+                date = check.date,
+                isCompleted = check.isCompleted
+            )
+        )
+    }
+
+    override suspend fun deleteHabitCheck(habitId: Int, date: java.time.LocalDate) {
+        habitCheckDao.deleteCheck(habitId, date)
+    }
+
     override fun getEmotionRecordsBetween(
         start: java.time.LocalDateTime,
         end: java.time.LocalDateTime

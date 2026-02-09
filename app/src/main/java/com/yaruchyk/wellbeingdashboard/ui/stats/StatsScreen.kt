@@ -91,16 +91,26 @@ fun StatsScreen(
                     Card(modifier = Modifier.fillMaxWidth()) {
                         Column(modifier = Modifier.padding(16.dp)) {
                             Text("Emociones Registradas", style = MaterialTheme.typography.titleMedium)
-                            if (stats.weeklyEmotions.emotionCounts.isEmpty()) {
+                            if (stats.weeklyEmotions.dailyEmotions.isEmpty()) {
                                 Text("No hay registros esta semana", style = MaterialTheme.typography.bodyMedium)
                             } else {
-                                stats.weeklyEmotions.emotionCounts.forEach { (emotion, count) ->
-                                    Row(
-                                        modifier = Modifier.fillMaxWidth(),
-                                        horizontalArrangement = Arrangement.SpaceBetween
-                                    ) {
-                                        Text(emotion, style = MaterialTheme.typography.bodyLarge)
-                                        Text(count.toString(), style = MaterialTheme.typography.bodyLarge)
+                                // Sort by date descending
+                                val sortedDates = stats.weeklyEmotions.dailyEmotions.keys.sortedDescending()
+                                sortedDates.forEach { date ->
+                                    val emotionsList = stats.weeklyEmotions.dailyEmotions[date] ?: emptyList()
+                                    Column(modifier = Modifier.padding(vertical = 4.dp)) {
+                                        Text(
+                                            text = date.toString(), // Or format nicely
+                                            style = MaterialTheme.typography.labelMedium,
+                                            color = MaterialTheme.colorScheme.primary
+                                        )
+                                        emotionsList.forEach { emotionString ->
+                                            Text(
+                                                text = "• $emotionString",
+                                                style = MaterialTheme.typography.bodyMedium,
+                                                modifier = Modifier.padding(start = 8.dp)
+                                            )
+                                        }
                                     }
                                 }
                             }

@@ -19,7 +19,8 @@ data class WeeklyEmotionSummary(
     val startDate: LocalDate,
     val endDate: LocalDate,
     val emotionCounts: Map<String, Int>, // EmotionType -> Count
-    val intensityCounts: Map<EmotionIntensity, Int>
+    val intensityCounts: Map<EmotionIntensity, Int>,
+    val dailyEmotions: Map<LocalDate, List<String>> // Date -> List of emotions
 )
 
 data class DashboardStats(

@@ -1,0 +1,67 @@
+> Task :app:clean
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseResValues
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :app:extractProguardFiles
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:javaPreCompileRelease
+> Task :app:mergeReleaseNativeLibs
+
+> Task :app:stripReleaseDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so, libdatastore_shared_counter.so.
+
+> Task :app:mergeReleaseStartupProfile UP-TO-DATE
+> Task :app:extractReleaseNativeSymbolTables
+> Task :app:mergeReleaseArtProfile
+> Task :app:mergeReleaseShaders
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:mergeReleaseAssets
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:compressReleaseAssets
+> Task :app:extractReleaseVersionControlInfo
+> Task :app:mergeReleaseResources
+> Task :app:processApplicationManifestReleaseForBundle
+> Task :app:collectReleaseDependencies
+> Task :app:sdkReleaseDependencyData
+> Task :app:validateSigningRelease
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:processReleaseManifestForPackage
+> Task :app:processReleaseResources
+> Task :app:bundleReleaseResources
+> Task :app:kspReleaseKotlin
+
+> Task :app:compileReleaseKotlin FAILED
+e: file:///C:/Users/syaru/AndroidStudioProjects/wellbeingdashboard/app/src/main/java/com/yaruchyk/wellbeingdashboard/ui/habits/HabitsScreen.kt:16:35 Conflicting import: imported name 'ExperimentalMaterial3Api' is ambiguous.
+e: file:///C:/Users/syaru/AndroidStudioProjects/wellbeingdashboard/app/src/main/java/com/yaruchyk/wellbeingdashboard/ui/habits/HabitsScreen.kt:19:35 Conflicting import: imported name 'ExperimentalMaterial3Api' is ambiguous.
+e: file:///C:/Users/syaru/AndroidStudioProjects/wellbeingdashboard/app/src/main/java/com/yaruchyk/wellbeingdashboard/ui/habits/HabitsScreen.kt:95:38 Unresolved reference 'androidx'.
+e: file:///C:/Users/syaru/AndroidStudioProjects/wellbeingdashboard/app/src/main/java/com/yaruchyk/wellbeingdashboard/ui/habits/HabitsScreen.kt:100:90 Unresolved reference 'Delete'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileReleaseKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 23s
+37 actionable tasks: 36 executed, 1 up-to-date

@@ -44,6 +44,7 @@ fun EmotionEntrySheet(
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxWidth()
+
         ) {
             Text(text = "¿Cómo te sientes?", style = MaterialTheme.typography.titleLarge)
             Spacer(modifier = Modifier.height(16.dp))
@@ -112,7 +113,7 @@ fun EmotionEntrySheet(
             ) {
                 Text(if (uiState.isSaving) "Guardando..." else "Guardar Registro")
             }
-            Spacer(modifier = Modifier.height(32.dp)) // Bottom padding
+            Spacer(modifier = Modifier.height(80.dp)) // Increased bottom padding to lift button
         }
     }
 }

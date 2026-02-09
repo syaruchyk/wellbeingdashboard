@@ -18,15 +18,42 @@ class DashboardViewModel @Inject constructor(
     private val repository: WellbeingRepository
 ) : ViewModel() {
 
-    // Filter habits for Today
-    val todayHabits: StateFlow<List<Habit>> = repository.getAllHabits()
-        .map { habits ->
+    // Filter habits for Today and combine with checks
+    val todayHabits: StateFlow<List<com.yaruchyk.wellbeingdashboard.domain.model.HabitWithStatus>> =
+        kotlinx.coroutines.flow.combine(
+            repository.getAllHabits(),
+            repository.getHabitChecksBetween(LocalDate.now(), LocalDate.now())
+        ) { habits, checks ->
             val today = LocalDate.now().dayOfWeek
-            habits.filter { it.isActive && it.daysOfWeek.contains(today) }
+            val todayHabits = habits.filter { it.isActive && it.daysOfWeek.contains(today) }
+            
+            todayHabits.map { habit ->
+                val isCompleted = checks.any { it.habitId == habit.id }
+                com.yaruchyk.wellbeingdashboard.domain.model.HabitWithStatus(habit, isCompleted)
+            }
         }
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(5000),
             initialValue = emptyList()
         )
+
+    fun toggleHabitCompletion(habit: Habit, isCompleted: Boolean) {
+        viewModelScope.launch {
+            val date = LocalDate.now()
+            if (isCompleted) {
+                // Mark as completed
+                repository.insertHabitCheck(
+                    com.yaruchyk.wellbeingdashboard.domain.model.HabitCheck(
+                        habitId = habit.id,
+                        date = date,
+                        isCompleted = true
+                    )
+                )
+            } else {
+                // Mark as not completed (delete check)
+                repository.deleteHabitCheck(habit.id, date)
+            }
+        }
+    }
 }

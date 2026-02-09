@@ -13,6 +13,9 @@ interface HabitCheckDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCheck(check: HabitCheckEntity)
 
+    @Query("DELETE FROM habit_checks WHERE habitId = :habitId AND date = :date")
+    suspend fun deleteCheck(habitId: Int, date: LocalDate)
+
     @Query("SELECT * FROM habit_checks WHERE habitId = :habitId AND date = :date")
     suspend fun getCheck(habitId: Int, date: LocalDate): HabitCheckEntity?
 

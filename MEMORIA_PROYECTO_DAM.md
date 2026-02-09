@@ -57,7 +57,7 @@ El sistema está dirigido a usuarios con un nivel técnico medio-basico, interes
 | **HU-01** | Como usuario preocupado por mi rutina, quiero crear un nuevo hábito... | Hábitos |
 | **HU-02** | Como usuario organizado, quiero ver una lista de mis hábitos del día... | Hábitos |
 | **HU-03** | Como usuario motivado, quiero marcar un hábito como "Completado"... | Hábitos |
-| **HU-04** | Como usuario, quiero eliminar hábitos que ya no realizo... | Hábitos |
+| **HU-04** | Como usuario, quiero eliminar hábitos (Deslizar o Botón Papelera)... | Hábitos |
 | **HU-05** | Como usuario reflexivo, quiero registrar mi emoción actual... | Emociones |
 | **HU-06** | Como usuario detallista, quiero indicar la intensidad y una nota... | Emociones |
 | **HU-07** | Como usuario analítico, quiero consultar mi historial de registros... | Emociones |
@@ -237,7 +237,7 @@ Se completó la funcionalidad de recordatorios locales para fomentar el hábito 
     *   `SettingsRepository`: Gestión de preferencias con DataStore.
     *   `DailyReminderWorker`: Tarea en segundo plano que desencadena la notificación.
     *   `SettingsViewModel`: Expone el estado de la preferencia a la UI.
-*   **UI:** Nueva pantalla `SettingsScreen` con switch para activar/desactivar recordatorios, persistiendo la elección del usuario.
+*   **UI:** Nueva pantalla `SettingsScreen` con switch para activar/desactivar recordatorios, persistiendo la elección del usuario. Accesible desde la barra de navegación principal.
 *   **Integración:** Inyección de dependencias optimizada para asegurar la creación del canal de notificaciones al inicio.
 
 ---
@@ -288,6 +288,34 @@ Aunque la versión actual es completamente funcional (MVP), se identifican área
 2.  **Google Codelabs.** (2025). *Jetpack Compose Basics.* Recuperado de: [developer.android.com/codelabs/jetpack-compose-basics](https://developer.android.com/codelabs/jetpack-compose-basics)
 3.  **Robert C. Martin.** (2017). *Clean Architecture: A Craftsman's Guide to Software Structure and Design.* Prentice Hall.
 4.  **Plutchik, R.** (1980). *A general psychoevolutionary theory of emotion.* Emotion: Theory, research, and experience, 1(3), 3-33.
+
+---
+---
+
+## 14. ANEXO GRÁFICO: INTERFAZ FINAL
+
+A continuación se presentan las capturas de pantalla de la versión final (v1.0) entregada.
+
+### 14.1 Dashboard y Navegación
+*(Vista principal con resumen del día y acceso a módulos)*
+![Captura del Dashboard](screenshots/dashboard_final.png)
+
+### 14.2 Gestión de Hábitos
+*(Lista de hábitos y formulario de creación)*
+![Lista de Hábitos](screenshots/habits_list.png)
+![Crear Hábito](screenshots/habit_creation.png)
+
+### 14.3 Registro Emocional
+*(Modal Bottom Sheet desplegado)*
+![Registro Emocional](screenshots/emotion_sheet.png)
+
+### 14.4 Estadísticas y Progreso
+*(Resumen semanal y rachas)*
+![Pantalla de Estadísticas](screenshots/stats_screen.png)
+
+### 14.5 Ajustes y Configuración
+*(Gestión de notificaciones y tema)*
+![Pantalla de Ajustes](screenshots/settings_screen.png)
 
 ---
 **FIN DEL DOCUMENTO**

@@ -61,12 +61,18 @@ class GetWeeklyStatsUseCase @Inject constructor(
             // 2. Weekly Emotion Summary
             val emotionCounts = emotions.groupingBy { it.emotionType }.eachCount()
             val intensityCounts = emotions.groupingBy { it.intensity }.eachCount()
+             // Group emotions by date, listing their types
+            val dailyEmotions = emotions.groupBy { it.timestamp.toLocalDate() }
+                .mapValues { entry -> 
+                    entry.value.map { "${it.emotionType} (${it.intensity.name})" } 
+                }
             
             val emotionSummary = WeeklyEmotionSummary(
                 startDate = startOfWeek,
                 endDate = today,
                 emotionCounts = emotionCounts,
-                intensityCounts = intensityCounts
+                intensityCounts = intensityCounts,
+                dailyEmotions = dailyEmotions
             )
 
             // 3. Streak (Global for the week? Or just generic?)

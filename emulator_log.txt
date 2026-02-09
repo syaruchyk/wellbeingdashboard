@@ -1174,3 +1174,763 @@ DEBUG   | Waiting for exit signal RenderThread @0000017553C9B440
 DEBUG   | Data frame has invalid ether type 0
 DEBUG   | Unexpected ether type: 0. Dump frame: Data (Data)
 
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | ColorBuffer 158, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 160, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 161, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 162, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 164, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 165, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 166, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 168, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 169, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | Exited a RenderThread @0000017553C9B440
+DEBUG   | Started new RenderThread (total 18) @000001752727D000
+DEBUG   | ColorBuffer 170, 540x1200, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 2785280, type: 1, props: 1 / 1]
+DEBUG   | Started new RenderThread (total 19) @00000175387F7AA0
+DEBUG   | ColorBuffer 173, 1x1, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 512, type: 1, props: 1 / 1]
+DEBUG   | Started new RenderThread (total 20) @0000017506539750
+DEBUG   | ColorBuffer 176, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 178, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 179, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | Started new RenderThread (total 21) @00000175387F7D40
+DEBUG   | ColorBuffer 182, 1x1, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 512, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 183, 1080x2337, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 185, 1080x2337, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 186, 1080x2337, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+INFO         | Critical: UpdateLayeredWindowIndirect failed for ptDst=(144, 131), size=(300x21), dirty=(300x21 0, 0) (Uno de los dispositivos conectados al sistema no funciona.) (:0, )
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | ColorBuffer 187, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | Started new RenderThread (total 22) @000001750653D3D0
+DEBUG   | ColorBuffer 189, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 191, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 192, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | ColorBuffer 193, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 195, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 196, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 197, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 198, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 200, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 201, 1080x2400, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 10584064, type: 1, props: 1 / 1]
+DEBUG   | ColorBuffer 202, 864x1920, VK_FORMAT_R8G8B8A8_UNORM, Memory [size: 6635520, type: 1, props: 1 / 1]
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+INFO         | DEBUG  Wait for emulator (pid 37624) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+ | Saving state on exit with session uptime 498695 ms
+DEBUG   | 0000017506405C30: texture data 0000017505B60B30 does not need restore
+DEBUG   | 0000017506405C30: texture data 0000017505B61370 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017505B61000 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017505B5F060 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017505B5DBC0 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F8EE50 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F8EC40 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F8F060 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F8F110 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F90C90 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F905B0 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F91000 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F909D0 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F91420 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F90240 does not need restore
+DEBUG   | 0000017504FA5610: texture data 0000017528F90500 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F876B0 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017526B066A0 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8C720 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017526B06960 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F88470 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F89910 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F87E40 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F87B80 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F89860 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F87080 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F88E10 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F87970 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F89230 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8F1C0 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8EA30 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8DB10 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8E140 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8E1F0 does not need restore
+DEBUG   | 0000017505A81930: texture data 0000017528F8E350 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017526B00F50 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017528F96CD0 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017526AFF7F0 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017505B5E1F0 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017505B61E70 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017505B5F950 does not need restore
+DEBUG   | 00000175271FBBE0: texture data 0000017505B60BE0 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8BD80 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8B5F0 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8A4C0 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8A780 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F89BD0 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8A990 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017528F8A830 does not need restore
+DEBUG   | 0000017504684780: texture data 0000017526B01210 does not need restore
+DEBUG   | 00000175038CDBB0: texture data 0000017528F928C0 does not need restore
+DEBUG   | 00000175038CDBB0: texture data 0000017528F93EC0 does not need restore
+DEBUG   | 00000175389CBFE0: texture data 0000017528F92130 does not need restore
+DEBUG   | 00000175389CBFE0: texture data 0000017528F94860 does not need restore
+DEBUG   | 00000175389CBFE0: texture data 0000017528F92080 does not need restore
+DEBUG   | 00000175153EE6C0: texture data 0000017528F92970 does not need restore
+DEBUG   | 00000175153EE6C0: texture data 0000017528F92A20 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F874A0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B056D0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F89180 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F8B330 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F8A410 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F8C510 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017528F8AE60 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B068B0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04650 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04A70 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05830 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05150 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B058E0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05FC0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04BD0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04D30 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05200 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04DE0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B06070 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04F40 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B06120 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B04E90 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B06280 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B063E0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05360 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B06540 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B054C0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B05A40 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B06800 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFFA00 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFFAB0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFEE50 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B010B0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFFC10 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B012C0 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFFB60 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526B01370 does not need restore
+DEBUG   | 00000175270544D0: texture data 0000017526AFF690 does not need restore
+DEBUG   | 0000017514D71F70: texture data 0000017526AFFED0 does not need restore
+DEBUG   | 0000017514D71F70: texture data 0000017526B00C90 does not need restore
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017514D372C0: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 000001750552B4B0: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 000001751591DE50: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 00000175541BA8D0: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017502202640: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017528C7A2F0: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503D9FB90: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017502749190: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503897350: finish saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 0
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 1
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 2
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 3
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 4
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 5
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 6
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 7
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 8
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: start saving type 9
+
+DEBUG   | ShareGroup::onSave: 0000017503EDC610: finish saving type 9
+
+DEBUG   | Sending CMD_REPAINT to reposting thread
+DEBUG   | Reposting thread dequeueing a CMD_REPAINT
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+INFO         | Saving with gfxstream=1
+INFO         | Saving snapshot 'default_boot' using 1569 ms
+DEBUG  DEBUG  DEBUG   | Waiting for exit signal RenderThread @0000017515603840
+DEBUG   | Waiting for exit signal RenderThread @000001750644CCA0
+DEBUG   |  | Waiting for exit signal RenderThread @0000017538B422B0
+Waiting for exit signal RenderThread @0000017505E9D500
+DEBUG   |  | Waiting for exit signal RenderThread @0000017515603BC0
+Waiting for exit signal RenderThread @000001750653D3D0
+DEBUG  DEBUG   | DEBUG  Waiting for exit signal RenderThread @0000017501CA45F0
+DEBUG   |  | Waiting for exit signal RenderThread @0000017501CA4890
+Waiting for exit signal RenderThread @0000017506539D70
+DEBUG   | Waiting for exit signal RenderThread @0000017528ABEF10
+DEBUG  DEBUG   |  | Waiting for exit signal RenderThread @00000175387F7AA0
+DEBUG  Waiting for exit signal RenderThread @0000017505E9D0A0
+ | Waiting for exit signal RenderThread @0000017506539750
+DEBUG   | Waiting for exit signal RenderThread @0000017553F10030
+DEBUG   | Waiting for exit signal RenderThread @00000175387F7D40
+DEBUG   | DEBUG  Waiting for exit signal RenderThread @000001750644C920
+ | Waiting for exit signal RenderThread @0000017502607D70
+DEBUG   | Waiting for exit signal RenderThread @0000017504C85270
+DEBUG  DEBUG   | DEBUG   |  | Waiting for exit signal RenderThread @0000017553C9A3A0
+Waiting for exit signal RenderThread @000001750251D7F0
+Waiting for exit signal RenderThread @000001752727D000
+DEBUG   |  | Waiting for exit signal RenderThread @000001750251D390
+Exited a RenderThread @000001750644C920
+DEBUG   | Exited a RenderThread @0000017501CA4890
+DEBUG   | Exited a RenderThread @0000017553F10030
+DEBUG   | Exited a RenderThread @0000017506539D70
+DEBUG   | Exited a RenderThread @0000017505E9D0A0
+DEBUG   | Exited a RenderThread @000001750251D390
+DEBUG   | Exited a RenderThread @0000017553C9A3A0
+DEBUG   | Exited a RenderThread @000001750251D7F0
+DEBUG   | Exited a RenderThread @0000017502607D70
+DEBUG   | Exited a RenderThread @0000017504C85270
+DEBUG   | Exited a RenderThread @0000017501CA45F0
+DEBUG   | Exited a RenderThread @000001750644CCA0
+DEBUG   | Exited a RenderThread @0000017505E9D500
+DEBUG   | Exited a RenderThread @0000017515603840
+DEBUG   | Exited a RenderThread @0000017538B422B0
+DEBUG   | Exited a RenderThread @0000017515603BC0
+DEBUG   | Exited a RenderThread @0000017528ABEF10
+DEBUG   | Exited a RenderThread @000001752727D000
+DEBUG   | Exited a RenderThread @00000175387F7AA0
+DEBUG   | Exited a RenderThread @0000017506539750
+DEBUG   | Exited a RenderThread @00000175387F7D40
+DEBUG   | Exited a RenderThread @000001750653D3D0
+DEBUG   | call repost from subWindowRepaint callback
+DEBUG   | Reposting framebuffer.
+DEBUG   | Has last posted colorbuffer and is initialized; post.
+INFO         | Wait for emulator (pid 37624) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+
+DEBUG   | Error reading from client fd: error
+DEBUG   | Done with QEMU main loop
+DEBUG   | User configuration saved to C:\Users\syaru\.android\avd\..\avd\Medium_Phone.avd\emulator-user.ini
+DEBUG   | sending STOP to modem simulator host server
+DEBUG   | received exit request from parent process
+DEBUG   | waiting for monitor thread to join
+DEBUG   | requested to exit now
+DEBUG   | Hostapd main loop has stopped.
+INFO         | emuDirName: 'C:\Users\syaru\AppData\Local\Android\Sdk\emulator'
+INFO         | try dir C:\Users\syaru\AppData\Local\Android\Sdk\emulator
+INFO         | Trying emulator path 'C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe'
+INFO         | Found target-specific 64-bit emulator binary: C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe
+INFO         | Adding library search path: 'C:\Users\syaru\AppData\Local\Android\Sdk\emulator\lib64'
+INFO         | Adding library search path: 'C:\Users\syaru\AppData\Local\Android\Sdk\emulator\lib64\gles_swiftshader'
+INFO         | Adding library search path: 'C:\Users\syaru\AppData\Local\Android\Sdk\emulator\lib64\vulkan'
+INFO         | Quoted param: [C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe]
+INFO         | Quoted param: [-avd]
+INFO         | Quoted param: [Medium_Phone_API_36.1]
+INFO         | Quoted param: [-verbose]
+INFO         | Quoted param: [-no-snapshot-load]
+DEBUG   | emulator: Running :C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe
+DEBUG   | qemu backend: argv[00] = "C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe"
+DEBUG   | qemu backend: argv[01] = "-avd"
+DEBUG   | qemu backend: argv[02] = "Medium_Phone_API_36.1"
+DEBUG   | qemu backend: argv[03] = "-verbose"
+DEBUG   | qemu backend: argv[04] = "-no-snapshot-load"
+DEBUG   | Concatenated backend parameters:  C:\Users\syaru\AppData\Local\Android\Sdk\emulator\qemu\windows-x86_64\qemu-system-x86_64.exe -avd Medium_Phone_API_36.1 -verbose -no-snapshot-load

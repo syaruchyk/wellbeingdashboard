@@ -101,8 +101,14 @@ fun DashboardScreen(
                 LazyColumn(
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
-                    items(todayHabits) { habit ->
-                         com.yaruchyk.wellbeingdashboard.ui.components.HabitCard(habit)
+                    items(todayHabits) { status ->
+                         com.yaruchyk.wellbeingdashboard.ui.components.HabitCard(
+                             habit = status.habit,
+                             isCompleted = status.isCompleted,
+                             onCheckedChange = { isChecked ->
+                                 viewModel.toggleHabitCompletion(status.habit, isChecked)
+                             }
+                         )
                     }
                 }
             }
